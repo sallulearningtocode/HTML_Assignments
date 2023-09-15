@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Internal Css Used to keep everything in one file -->
+<style>
+    /* Answer 1 */
+  .title-container {
+    text-align: center;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: #888;
+  }
+
+  /* Amswer 2 */
+  body {
+    background-color: #5a3030;
+    margin: 0;
+    padding: 0;
+  }
+  /* Answer 3 */
+  .navbar {
+    text-align: center;
+  }
+  .navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: xx-large;
+  }
+/* Answer 4 */
+
+/* CSS for the hamburger menu */
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  display: none;
+  text-align: center;
+  background-color: #333;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 1;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+
+.menu a:hover {
+  background-color: #444;
+}
+
+.emoji-bar {
+    text-align: center;
+  }
+  .emoji {
+    font-size: 24px;
+    margin: 5px;
+    color: #333;
+  }
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .image-container {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .image:hover {
+    transform: scale(1.1);
+  }
+
+
+  .testimonial-card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: linear-gradient(to bottom, #f0f0f0, #ccc);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: top;
+  }
+  .testimonial-card:nth-child(odd) {
+    background: linear-gradient(to bottom, #f0f0f0, #ccc);
+  }
+  .testimonial-card:nth-child(even) {
+    background: linear-gradient(to bottom, #ccc, #f0f0f0);
+  }
+
+
+
+  .business-card {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .loader {
+    width: 50px;
+    height: 50px;
+    background-color: #0073e6;
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .navbar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+  }
+  .content {
+    padding: 20px;
+  }
+  .footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  @media (max-width: 740px) {
+    body {
+      background-color: #333;
+      color: #fff;
+    }
+  }
+</style>
+
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">Travel Website</h1>
+        <p class="subtitle">Explore the World with Us</p>
+    </div>
+    
+    <!-- Answer 3 -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Event</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Answer 4 -->
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Event</a>
+        <a href="#">Feedback</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!-- Answer 5 -->
+      <div class="emoji-bar">
+        <span class="emoji">😀</span>
+        <span class="emoji">😍</span>
+        <span class="emoji">🎉</span>
+        <span class="emoji">🌟</span>
+        <span class="emoji">👍</span>
+      </div>
+      
+      <!-- Answer 6 -->
+      <div class="image-gallery">
+        <div class="image-container">
+          <img class="image" src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+          <img class="image" src="image2.jpg" alt="Image 2">
+        </div>
+        <!-- Add more image containers here -->
+      </div>
+
+
+      <!-- Answer 7 -->
+      <div class="testimonial-card">
+        <h2>Testimonial 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="testimonial-card">
+        <h2>Testimonial 2</h2>
+        <p>Suspendisse potenti. Vestibulum vel purus vitae eros dictum tincidunt.</p>
+      </div>
+      <div class="testimonial-card">
+        <h2>Testimonial 3</h2>
+        <p>Nullam pharetra faucibus risus, vel venenatis urna dictum non.</p>
+      </div>
+
+      <!-- Answer 8 -->
+      <div class="business-card">
+        <img class="profile-picture" src="profile.jpg" alt="Profile Picture">
+        <h2>John Doe</h2>
+        <p>Web Developer</p>
+        <p>Email: johndoe@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+
+    <!-- Answer 9 -->
+    <div class="loader-container">
+        <div class="loader"></div>
+
+<!-- Answer 10 -->
+<div class="container">
+    <div class="header">
+      <h1>My Portfolio</h1>
+      <p>Welcome to my portfolio website</p>
+    </div>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="content">
+      <!-- Your portfolio content goes here -->
+    </div>
+    <div class="footer">
+      &copy; 2023 My Portfolio
+    </div>
+  </div>
+
+</body>
+</html>
