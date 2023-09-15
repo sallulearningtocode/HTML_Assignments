@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Used Internal CSS to Keep Everything in Same Document -->
+
+    <!-- Answer 1 -->
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Answer 2 */
+    .delete-button {
+      background-color: #ff3333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .delete-button:hover {
+      background-color: #ff0000;
+    }    
+
+    /* Answer 3 */
+    .back-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Answer 6 */
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('background-image.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .search-bar {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .search-button {
+      background-color: #0073e6;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .search-button:hover {
+      background-color: #005bb8;
+    }
+
+    /* Answer 7 */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .instructions {
+      margin: 20px 0;
+    }
+    .feedback {
+      margin: 20px 0;
+    }
+    .emoji {
+      font-size: 24px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    .error-message {
+      font-size: 48px;
+      color: #ff0000;
+      margin-bottom: 20px;
+    }
+    .message {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .options {
+      font-size: 18px;
+    }
+    .options a {
+      text-decoration: none;
+      color: #0073e6;
+      margin: 0 10px;
+    }
+
+
+    .toast {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #ff3333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: slide-in 0.5s forwards, slide-out 0.5s 3s forwards;
+      z-index: 1000;
+    }
+    @keyframes slide-in {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    @keyframes slide-out {
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    <button class="delete-button">Delete</button>
+  <!-- Your content goes here -->
+  <form action="submit_form.php">
+    <!-- Form fields go here -->
+    <button type="submit" class="back-button">Back</button>
+    <button type="submit">Submit</button>
+
+    <!-- Answer 4 -->
+    <div class="payment-container">
+        <h1>Payment Page</h1>
+        <!-- Payment options and form go here -->
+        <button class="payment-button">Pay Now</button>
+        <p class="error-message">Please enter valid payment details.</p>
+      </div>
+    
+      <!-- Answer 5 -->
+      <div class="filter-bar">
+        <label for="color-filter">Color:</label>
+        <select id="color-filter">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <!-- Add more color options -->
+        </select>
+        <label for="size-filter">Size:</label>
+        <select id="size-filter">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <!-- Add more size options -->
+        </select>
+        <button class="filter-button">Apply Filters</button>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">Search</button>
+      </div>
+
+
+
+      
+<!-- Answer 7 -->
+      <div class="video-container">
+        <video src="video.mp4" autoplay loop muted></video>
+        <div class="overlay">
+          <h1>Title</h1>
+          <p>Subtitle</p>
+        </div>
+      </div>
+
+<!-- Answer 8 -->
+<div class="container">
+    <div class="header">
+      <h1>Code Documentation</h1>
+      <p>Instructions and Support</p>
+    </div>
+    <div class="instructions">
+      <h2>How to Use the Code</h2>
+      <p>Provide clear instructions on how to use your code.</p>
+    </div>
+    <div class="feedback">
+      <h2>Feedback and Support</h2>
+      <p>If you encounter any issues or have questions, feel free to reach out for support.</p>
+      <p class="emoji">👍</p>
+    </div>
+  </div>
+
+  <!-- Answer 9 -->
+  <div class="container">
+    <div class="error-message">404</div>
+    <div class="message">Page Not Found</div>
+    <div class="options">
+      <p>Sorry, the resource you are trying to access is not available.</p>
+      <p>Explore other pages:</p>
+      <a href="/">Home</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="toast">
+    Error: Something went wrong. Please try again.
+  </div>
+
+</body>
+</html>
